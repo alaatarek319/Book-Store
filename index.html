@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="Flex">
+      <div class="Head">
+        <h1>Welcome to Readify Library</h1>
+        <p id="SignIn" style="cursor: pointer">Sign In</p>
+      </div>
+      <div>
+        <h3>About Our Library</h3>
+        <p style="font-size: 19px">
+          Readify Library was established in 2005 and offers a wide range of
+          physical and digital books across all genres. Our mission is to
+          promote reading and make books accessible to everyone.
+        </p>
+      </div>
+      <div>
+        <h4>Announcements</h4>
+        <ul>
+          <li>📢 New arrivals for Summer 2025 now available!</li>
+          <li>📖 Join our online reading club - every Friday at 6 PM.</li>
+          <li>🛒 Get 10% off on your first purchase</li>
+        </ul>
+      </div>
+      <div class="Footer">
+        <p>
+          Contact: info <a style="cursor: pointer">@readify.com</a> | 📞
+          +123-456-7890
+        </p>
+        <p>
+          Send us feedback
+          <a style="color: lightblue; cursor: pointer">here</a>
+        </p>
+      </div>
+    </div>
+    <script>
+      document.getElementById("SignIn").addEventListener("click", function () {
+        window.location.href = "Sign.html";
+      });
+    </script>
+  </body>
+</html>

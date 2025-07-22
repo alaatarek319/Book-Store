@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catalog Page</title>
+    <link rel="stylesheet" href="Catalog.css" />
+  </head>
+  <body>
+    <div class="Flex">
+      <div class="Head">
+        <h1>Our Catalog</h1>
+      </div>
+
+      <div class="container">
+        <div class="Book" onclick="goToPurchase(`Harry Potter`, '9781408855652.jpg')">
+          <img class="Book-photo" src="9781408855652.jpg" />
+          <div class="Book-info">
+            <h3>Harry Potter</h3>
+            <p>J.k Rowling</p>
+            <p>Fantasy</p>
+            <p>Status: Available</p>
+          </div>
+        </div>
+
+        <div class="Book" onclick="goToPurchase('Chasing The Ghost', 'Chasing-The-Ghost.png')">
+          <img class="Book-photo" src="Chasing-The-Ghost.png" />
+          <div class="Book-info">
+            <h3>Chasing The Ghost</h3>
+            <p>J.k Rowling</p>
+            <p>Fantasy</p>
+            <p>Status: Available</p>
+          </div>
+        </div>
+
+        <div class="Book">
+          <img class="Book-photo" src="images.jpeg" onclick="goToPurchase('Chasing The Ghost', 'Chasing-The-Ghost.png')"/>
+          <div class="Book-info">
+              <h3>Harry Potter</h3>
+              <p>J.k Rowling</p>
+              <p>Fantasy</p>
+              <p>Status: Available</p>
+          </div>
+        </div>
+
+        <div class="Book">
+          <img class="Book-photo" src="The-Dragon-Keeper.png" onclick="goToPurchase('The-Dragon-Keeper', 'The-Dragon-Keeper.png')"/>
+          <div class="Book-info">
+              <h3>The-Dragon-Keeper</h3>
+              <p>J.k Rowling</p>
+              <p>Fantasy</p>
+              <p>Status: Available</p>
+          </div>
+        </div>
+
+        <div class="Book">
+          <img class="Book-photo" src="the-lake-of-secrets.png" onclick="goToPurchase('the-lake-of-secrets', 'the-lake-of-secrets.png')"/>
+          <div class="Book-info">
+              <h3>the-lake-of-secrets</h3>
+              <p>J.k Rowling</p>
+              <p>Fantasy</p>
+              <p>Status: Available</p>
+          </div>
+        </div>
+
+        <div class="Book">
+          <img class="Book-photo" src="The-Unseen-Guardian.png" onclick="goToPurchase('The-Unseen-Guardian', 'The-Unseen-Guardian.png')"/>
+          <div class="Book-info">
+              <h3>The-Unseen-Guardian</h3>
+              <p>J.k Rowling</p>
+              <p>Fantasy</p>
+              <p>Status: Available</p>
+          </div>
+        </div>
+    </div>
+    <script>
+      function goToPurchase(name, img){
+        const url = `purchase.html?name=${encodeURIComponent(name)}&img=${encodeURIComponent(img)}`;
+        console.log(url);
+        window.location.href = url; 
+      }
+    </script>
+  </body>
+</html>

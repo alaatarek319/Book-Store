@@ -1,0 +1,78 @@
+body {
+  font-family: Roboto, Arial;
+  height: 565px;
+}
+
+.Grid {
+  display: flex;
+  height: 100%;
+}
+
+.create_account {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  font-size: 45px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sub_Title {
+  color: gray;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.input {
+  background-color: #e4fffb;
+  color: gray;
+  padding: 15px 110px 15px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #0b7c6b;
+  color: white;
+  font-weight: bold;
+  padding: 15px 65px 15px 65px;
+  width: 299px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.photo {
+  flex: 1;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+.successful {
+  background: rgba(0, 183, 255, 0.945);
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}

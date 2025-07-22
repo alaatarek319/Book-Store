@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(226, 226, 226);
+  margin: 0;
+  font-family: Roboto, Arial;
+  height: 650px;
+}
+
+.Flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.Head {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  background-color: #0b7c6b;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 900px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#my-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  padding-left: 20px;
+}
+
+#my-form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#my-form div input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+}
+
+.Footer p {
+  margin: 8px 0 8px 0;
+}
+
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+.successful {
+  background: rgba(0, 183, 255, 0.945);
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
